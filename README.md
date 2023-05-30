@@ -14,6 +14,9 @@
 - ④express-session技术，用户获取当前登录的用户信息，并且保证账号退出后无法被其他人登录
 - ⑤mysql技术，用于存储数据信息
 
+###.环境配置
+    npm install multer
+    npm install express
 ### 实现功能：
 
 - 登录
