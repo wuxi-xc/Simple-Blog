@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    height:fit-content;
+}
+
+.article-wrapper {
+    background-color: rgba(197, 128, 59, 0.5);
+    width: 700px;
+    height: 90%;
+    border-radius: 15px;
+    padding: 0 50px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+#image {
+    text-align: left;
+    background-color:white;
+    height: 30%;
+}
+
+#img0{
+    border: rgb(27, 216, 233) dashed 2px;
+}
+
+.header {
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+}
+
+.btn {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+    background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+}
+
+.msg {
+    text-align: center;
+    line-height: 200px;
+}
+
+a {
+    text-decoration-line: none;
+    background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+    border: black dashed 2px;
+}
+
+/* 按钮当鼠标悬浮时的状态： */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    transition: all .2s;
+    border-radius: 10px;
+}
+
+.tankuang {
+    display: none;
+    position: relative;
+    background: #585a30;
+    z-index: 99;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 5px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

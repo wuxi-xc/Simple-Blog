@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <script src="../public/jQuery.mini.js"></script>
+    <script src="../public/axios.js"></script>
+    <link rel="shortcut icon" href="../public/favicon.ico">
+    <link rel="stylesheet" href="../public/css/lgOrRg.css">
+</head>
+
+<body onload="createCode()">
+
+    <div class="tankuang">
+        <div id="header">
+            <span style="color:#ffffff; font-size:20px;margin: auto;line-height: 50px;" id="layer_msg"></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="header">HELLO HANG</div>
+            <div class="form-wrapper">
+                <form action="" id="form_login">
+                    <input type="text" name="username" placeholder="账号/邮箱号" class="input-item" id="user">
+                    <input type="password" name="password" placeholder="密码" class="input-item" id="pwd">
+                    <div class="chaptBox">
+                        <span><input type="text" placeholder="请输入验证码" class="input-item1" id="chapt"></span>
+                        <span class="code"></span><a href="#" onclick="createCode()">模糊换一张</a>
+                    </div>
+                    <div class="login btn">登录</div>
+                </form>
+            </div>
+            <div class="msg">
+                没有账号?
+                <span class="register btn">去注册</s>
+            </div>
+        </div>
+    </div>
+
+    <!-- 实现粒子动画效果 -->
+    <script color="127,255,212" opacity="1.0" count="150"
+        src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript"
+        charset="utf-8"></script>
+    <!-- color=“255,0,0” 背景粒子线的颜色值
+              opacity=“0.5” 背景粒子线的透明度，一般设置成0.5-1之间
+              count=“99” 背景粒子线的密度，建议不要太大，否则页面容易卡死 -->
+    <script src="../public/js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="../public/jQuery.mini.js"></script>
+    <script src="../public/axios.js"></script>
+    <link rel="shortcut icon" href="../public/favicon.ico">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        #product img {
+            width: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- place navbar here -->
+            <nav class="navbar navbar-fixed-top navbar-expand-md navbar-light bg-light shadow p-6 mb-3 mt-3 rounded"
+                aria-label="breadcrumb">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0 justify-content-center justify-content-lg-between">
+                            <li class="nav-item bg-white shadow p-2 mb-2 mx-2 rounded col-3 text-center">
+                                <a class="nav-link" href="./index.html" aria-current="true">返回主页</a>
+                            </li>
+                            <li class="nav-item bg-info shadow p-1 mb-2 mx-2 rounded col-3 text-center">
+                                <a class="nav-link" href="#articles">博客文章</a>
+                            </li>
+                            <li class="nav-item bg-white shadow p-1 mb-2 mx-2 rounded col-3 text-center">
+                                <a class="nav-link" href="./leaving.html">留言板</a>
+                            </li>
+                            <li class="nav-item bg-info shadow p-1 mb-2 mx-2 rounded col-3 text-center">
+                                <a class="nav-link" href="#contact">关于我们</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex my-2 my-lg-0">
+                            <input class="form-control me-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <main>
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="First slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="../public/img/bg3.jpg" class="w-100 d-block" alt="First slide" width="120%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../public/img/bg4.jpg" class="w-100 d-block" alt="Second slide" width="120%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../public/img/bg.jpg" class="w-100 d-block" alt="Third slide" width="120%">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <br>
+            <div class="text-center">
+                <mark>
+                    <h2><strong class="text-danger" id="articles">全部文章</strong><em
+                            style="font-family:'Times New Roman', Times, serif; ">All Articles</em></h2>
+                </mark>
+            </div>
+            <br>
+            <div>
+                <div class="list-group">
+                    <br>
+                    <hr class="bg-primary">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <img src="../public/img/bg.jpg" alt="" width="500">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="mt-0">电商平台</h5>
+                            <p>在PC端网站、小程序、APP、H5等移动端、服务端埋点进行数据采集，对用户行为进行分析，活动事件漏斗分析，商品个性化分析，为企业市场、销售、运营提供从商品、推广活动、渠道、
+                                价格等全方位分析，实现销售绩效增长。</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <br>
+                <hr class="bg-primary">
+            </div>
+        </main>
+        <footer class="mt-4 bg-dark text-light small">
+            <!-- place footer here -->
+            <div class="container py-5" id="contact">
+                <div class="row mx-2">
+                    <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                        <h5>相关信息</h5>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">联系方式：067-68954</li>
+                            <li class="mb-2">联系方式：067-68954</li>
+                            <li class="mb-2">
+                                <address>地址：麻花省哥廖沟</address>
+                            </li>
+                            <li class="mb-2">本站由DM独家创造</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-2 mb-3">
+                        <h5>Community</h5>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">Issues</li>
+                            <li class="mb-2">Discussions</li>
+                            <li class="mb-2">Corporate sponsors</li>
+                            <li class="mb-2">Open Collective</li>
+                            <li class="mb-2">Slack</li>
+                            <li class="mb-2">Stack Overflow></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+            </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+            </script>
+
+        <script>
+            $(function () {
+                // 点击文章列表切换页面
+                $('.list-group').on('click', 'a', function (e) {
+                    // 获取点击文字的id值
+                    var list_id = e.target.id
+                    // 获取文章列表进行文章筛选
+                    axios({
+                        method: 'GET',
+                        url: 'http://127.0.0.1/api/getArticle',
+                    }).then(function (res) {
+                        // console.log(list_id);
+                        var data = { id: list_id }
+                        // 筛选文章
+                        axios({
+                            method: 'POST',
+                            data,
+                            url: 'http://127.0.0.1/api/search',
+                        }).then(function (res) {
+                            if (res.data.status == 200) {
+                                console.log(res.data);
+                                console.log(res.data.data.content);
+                            } else {
+                                alert('文章不存在!')
+                            }
+                        })
+
+                    })
+                })
+
+                // 获取用户名判断是否登录
+                $.get(
+                    'http://127.0.0.1/api/username',
+                    function (res) {
+                        // console.log(res);
+                        if (res.status == 200) {
+                            let data = { num: 0 }
+                            // 获取文章列表
+                            axios({
+                                method: 'POST',
+                                data,
+                                url: 'http://127.0.0.1/api/limit',
+                            }).then(function (res) {
+                                // 将获取到的文章渲染到页面 作为初始页面
+                                res.data.data.map(item => {
+                                    let element = `<br>
+                                                  <hr class="bg-primary">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="../public/img/bg.jpg" alt="" width="500">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <h5 class="mt-0">${item.title}</h5>
+                                                        <p>${item.content}</p>
+                                                        <a href="page/${item.id}_id" target="_blank" class="list-group-item  list_a" id="${item.id}"><span class="username">用户 ${item.username}</span> <span class="time">发布于 ${item.time}</span></a>
+                                                    </div>
+                                                </div>
+                                                <hr>`
+                                    $('.list-group').append(element)
+                                })
+                            })
+                        } else {
+                            alert('请先完成登录')
+                            location.href = './login.html'
+                        }
+                    }
+                )
+
+                // 分页查询
+                $('.limit').on('click', 'li', function (e) {
+                    let data = { num: parseInt((e.target.id - 1) * 10) }
+                    axios({
+                        method: 'POST',
+                        data,
+                        url: 'http://127.0.0.1/api/limit',
+                    }).then(function (res) {
+                        if (res.data.status == 200) {
+                            $('.list-group').empty('')
+                            $('.list-group').append('<a href="#" class="list-group-item active listbig">文章列表</a>')
+                            res.data.data.map(item => {
+                                let a = `<a href="${item.id}_id" target="_blank" class="list-group-item  list_a" id="${item.id}">${item.title} <div class="name"> <span class="username">用户 ${item.username}</span> <span class="time">发布于 ${item.time}</span></div> </a>`
+                                $('.list-group').append(a)
+                            })
+                        } else {
+                            alert('查询失败!')
+                        }
+                    })
+                })
+            })
+        </script>
+    </div>
+</body>
+
+</html>

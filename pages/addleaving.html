@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../public/jQuery.mini.js"></script>
+    <link rel="stylesheet" href="../public/bootstrap.css">
+    <script src="../public/axios.js"></script>
+    <link rel="shortcut icon" href="../public/favicon.ico">
+    <link rel="stylesheet" href="../public/css/leaving.css">
+</head>
+
+<body>
+
+    <div class="tankuang">
+        <div id="header">
+            <span style="color:#ffffff; font-size:20px;margin: auto;line-height: 50px;" id="layer_msg"></span>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./index.html">返回主页</a>
+            </div>
+            <div class="collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav ">
+                    <li><a href="#" class="user">123123</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="#" id="btnLogout">退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="leaving-wrapper">
+            <div class="header">留言板</div>
+            <form id="form_add">
+                <div class="form-wrapper">、
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">留言接收</span>
+                        <input type="text" class="form-control" id="basic-url" name="reciver"
+                            aria-describedby="basic-addon3">
+                    </div>
+                    <ul class="list-group">
+                        我发布的留言
+                        <!-- 留言内容 -->
+                    </ul>
+                    <!-- <h3>文章内容</h3> -->
+                    <textarea class="form-control" rows="10" name="content" style="font-size: 16px;"></textarea>
+                    <div class="btn">发布留言</div>
+                    <br><br>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../public/js/addLeaving.js"></script>
+</body>
+
+</html>

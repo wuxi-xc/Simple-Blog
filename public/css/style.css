@@ -1,0 +1,129 @@
+body {
+    background-image: url(../img/bg3.jpg);
+}
+
+#main {
+    height: 100%;
+}
+
+
+
+.footer {
+    text-align: center;
+    background-color: rgb(196, 208, 255);
+    clear: both;
+    height: 15%;
+    width: 100%;
+    border-radius: 5px;
+    position: sticky;
+    bottom: 2px;
+    margin-top: 20px;
+}
+
+#collapsibleNavId ul li a {
+    margin-top: 2px;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    background: white;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#collapsibleNavId ul li a:hover {
+    color: #FFF;
+    background: #47c5bf;
+}
+
+#collapsibleNavId ul li a span {
+    /* font-size: 0.5rem; */
+    display: block;
+    margin-top: 3px;
+}
+
+.nav-item{
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgb(171, 171, 171);
+    border: 2px dashed;
+    border-color: lemonchiffon;
+    border-bottom: solid 5px aquamarine;
+    font-family: 微软雅黑;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+#section {
+    /* clear: left; */
+    margin-top: 20px;
+    box-sizing: border-box;
+    height: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+
+#content .header h4 {
+    text-align: center;
+    border: 2px dashed;
+    height: 20px;
+    width: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 35%;
+    margin-right: 35%;
+    box-shadow: 0 0 10px rgb(171, 171, 171);
+    color: rgba(154, 210, 237, 0.5);
+    padding: 5px;
+}
+
+#content {
+    background: rgba(239, 235, 235, 0.35);
+    width: 60%;
+    float: right;
+    margin-right: -20px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#content1 {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    position:relative;
+}
+
+/* button {
+    display: inline-block;
+    text-align: center;
+    background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    
+} */
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 150px;
+    vertical-align: top;
+}
+
+.aside {
+    width: 35%;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 500px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+
+.super:visited {
+    color: rgb(255, 0, 25);
+    text-shadow: 3, 6, 8 white;
+}
